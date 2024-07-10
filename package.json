@@ -1,0 +1,12 @@
+{
+  "name": "combined-project",
+  "version": "1.0.0",
+  "scripts": {
+    "serve:backend": "cd technical_challenge_WD && node index.js",
+    "serve:frontend": "cd technical_challenge_vue && npm run serve",
+    "serve": "concurrently \"npm run serve:backend\" \"npm run serve:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
